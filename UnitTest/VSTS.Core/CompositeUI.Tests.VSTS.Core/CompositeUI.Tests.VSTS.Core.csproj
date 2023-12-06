@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <IsPackable>false</IsPackable>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon />
@@ -30,6 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="..\..\VSTS\CompositeUI\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Remove="..\..\VSTS\CompositeUI\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Remove="..\..\VSTS\CompositeUI\Services\ModuleLoaderServiceFixture.cs" />
   </ItemGroup>
 </Project>

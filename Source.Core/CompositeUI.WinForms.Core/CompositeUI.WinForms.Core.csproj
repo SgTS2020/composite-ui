@@ -5,7 +5,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <RootNamespace>Microsoft.Practices.CompositeUI.WinForms</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <AssemblyName>Microsoft.Practices.CompositeUI.WinForms</AssemblyName>
@@ -19,6 +19,8 @@
   <ItemGroup>
     <Compile Include="..\..\Source\Solution Items\GlobalAssemblyInfo.cs" Link="GlobalAssemblyInfo.cs" />
     <Compile Exclude="..\..\Source\CompositeUI.WinForms\Properties\AssemblyInfo.cs" Include="..\..\Source\CompositeUI.WinForms\**\*.cs" />
+    <Compile Remove="..\..\Source\CompositeUI.WinForms\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Remove="..\..\Source\CompositeUI.WinForms\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     
     <EmbeddedResource Include="..\..\Source\CompositeUI.WinForms\SmartPartPlaceholder.bmp">
       <CustomToolNamespace>Microsoft.Practices.CompositeUI.WinForms</CustomToolNamespace>
@@ -54,8 +56,8 @@
       <DependentUpon>ZoneWorkspace.cs</DependentUpon>
       <Link>Workspaces\ZoneWorkspace.bmp</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\Source\CompositeUI.WinForms\Visualizer\VisualizerForm.resx"/>
-    <EmbeddedResource Include="..\..\Source\CompositeUI.WinForms\Properties\Resources.resx"/>
+    <EmbeddedResource Include="..\..\Source\CompositeUI.WinForms\Visualizer\VisualizerForm.resx" />
+    <EmbeddedResource Include="..\..\Source\CompositeUI.WinForms\Properties\Resources.resx" />
   </ItemGroup>
   
   <ItemGroup>

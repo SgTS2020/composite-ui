@@ -5,7 +5,7 @@
   </PropertyGroup>
   
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <ApplicationIcon />
     <Win32Resource />
     <UseWindowsForms>true</UseWindowsForms>
@@ -21,6 +21,8 @@
   <ItemGroup>
     <Compile Include="..\..\Source\Solution Items\GlobalAssemblyInfo.cs" Link="GlobalAssemblyInfo.cs" />
     <Compile Exclude="..\..\Source\CompositeUI\Properties\AssemblyInfo.cs" Include="..\..\Source\CompositeUI\**\*.cs" />
+    <Compile Remove="..\..\Source\CompositeUI\obj\Debug\.NETFramework,Version=v4.0.AssemblyAttributes.cs" />
+    <Compile Remove="..\..\Source\CompositeUI\obj\Debug\.NETFramework,Version=v4.8.AssemblyAttributes.cs" />
     <Compile Remove="..\..\Source\CompositeUI\StateElement.cs" />
     <Compile Remove="..\..\Source\CompositeUI\*.NetFramework.cs" />
     <EmbeddedResource Include="..\..\Source\CompositeUI\Properties\Resources.resx" />
